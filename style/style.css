@@ -1,0 +1,139 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.body{
+    background-color: #A4CE95;
+}
+.wrapper {
+    max-width: 1380px;
+}
+
+.row {
+    width: 100%;
+    height: auto;
+}
+
+.col-title {
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+.col-title::before {
+    content: '';
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -78%;
+    top: -50%;
+    background-color:#5F5D9C;
+}
+.col-titles{
+    margin-top: 35%;
+}
+.col-subtitle{
+    color: #5F5D9C;
+    font-size: 51px;
+    line-height: 72px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+.span{
+    color: #666;
+    font-size: larger;
+    font-size: 36px;
+    line-height: 62px;
+    font-weight: 900;
+    padding-left: 81px;
+}
+.col-partitle{
+    font-size: medium;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 42px;
+    padding-left: 21px;
+    color: #45445e;
+    font-family: 'Open Sans', sans-serif;
+}
+.col-btn{
+   padding-top: 10px;
+   padding-left: 20px;
+   width: 50%;
+}
+
+.col-btns{
+    display: none;
+    border: 1px solid #45445e;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #5F5D9C;
+    border: 1px solid #5F5D9C;
+}
+.fa-btn{
+    background-color: #5F5D9C;
+    width: 50%;
+    height: 20%;
+   
+}
+
+.col-titles-btn{
+    margin-top: 105%;
+}
+/* .btn-test{
+    width: 100%;
+    background-color: rgb(28, 36, 33);
+    height: 60px;
+    border-radius: 50%;
+} */
+.btn-test i{
+    padding: 9px 18px;
+    background-color: rgb(33, 34, 33);
+    width: 30%;
+    height: 100%;
+    border: 1px solid  rgb(33, 34, 33);
+    border-radius: 50% !important;
+}
+.btn-test:hover.btn-test {
+    color: white;
+    display: block;
+    padding: 9px 18px;
+    background-color: rgb(33, 34, 33);
+    width: 100%;
+    height: 100%;
+    border: 1px solid  rgb(33, 34, 33);
+    border-radius: 50% !important;
+}
+/* btn-design */
+.btn-design{
+    margin-top: 80%;
+    width: 100%;
+    height: 200px;
+    position: relative;
+   
+}
+.btn-fa{
+    position: absolute;
+    right: 0px;
+    top: 47px;
+    width: 30%;
+    height: 40px;
+    background-color: #5F5D9C;
+    border: 1px solid #5F5D9C;
+}
+.btn-fa i{
+    padding: 10px 10px;
+}
+.btn-i{
+    padding: 12px 10px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: aliceblue;
+}
+.btn-fa:hover{
+    display:none;
+}
+.fa-solid:hover.col-btns{
+    display: none;
+}
