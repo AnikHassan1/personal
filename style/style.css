@@ -1,139 +1,244 @@
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
-.body{
-    background-color: #A4CE95;
+:root {
+  --home: #3a5796;
+  --about: #1c9ceb;
+  --portfolio: #0371ae;
+  --contact: #d12c7a;
 }
+
+body { background-color: #ccc; }
+.body {
+  background-color: #a4ce95;
+}
+
 .wrapper {
-    max-width: 1380px;
+  max-width: 1380px;
 }
-
 .row {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
 .col-title {
-    position: relative;
-    width: 100%;
-    height: 750px;
+  position: relative;
+  width: 100%;
+  height: 750px;
 }
 .col-title::before {
-    content: '';
-    position: fixed;
-    height: 200%;
-    width: 100%;
-    transform: rotate(-15deg);
-    left: -78%;
-    top: -50%;
-    background-color:#5F5D9C;
+  content: "";
+  position: fixed;
+  height: 200%;
+  width: 100%;
+  transform: rotate(-15deg);
+  left: -78%;
+  top: -50%;
+  background-color: #5f5d9c;
 }
-.col-titles{
-    margin-top: 35%;
+.col-titles {
+  margin-top: 35%;
 }
-.col-subtitle{
-    color: #5F5D9C;
-    font-size: 51px;
-    line-height: 72px;
-    font-weight: 600;
-    padding-left: 20px;
+.col-subtitle {
+  color: #5f5d9c;
+  font-size: 51px;
+  line-height: 72px;
+  font-weight: 600;
+  padding-left: 20px;
 }
-.span{
-    color: #666;
-    font-size: larger;
-    font-size: 36px;
-    line-height: 62px;
-    font-weight: 900;
-    padding-left: 81px;
+.span {
+  color: #666;
+  font-size: larger;
+  font-size: 36px;
+  line-height: 62px;
+  font-weight: 900;
+  padding-left: 81px;
 }
-.col-partitle{
-    font-size: medium;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 42px;
-    padding-left: 21px;
-    color: #45445e;
-    font-family: 'Open Sans', sans-serif;
-}
-.col-btn{
-   padding-top: 10px;
-   padding-left: 20px;
-   width: 50%;
+.col-partitle {
+  font-size: medium;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 42px;
+  padding-left: 21px;
+  color: #45445e;
+  font-family: "Open Sans", sans-serif;
 }
 
-.col-btns{
-    display: none;
-    border: 1px solid #45445e;
-    width: 100%;
-    padding: 10px 10px;
-    background-color: #5F5D9C;
-    border: 1px solid #5F5D9C;
+.col-btn {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content:space-between;
+  padding: 0px 1px;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+  margin-left: 20px;
+  border-radius: 100px;
+  border: 1px solid #5f5d9c;
+  text-transform: uppercase;
+  box-shadow: -12px 11px 30px rgba(0, 0, 0, 0.5);
 }
-.fa-btn{
-    background-color: #5F5D9C;
-    width: 50%;
-    height: 20%;
-   
+.col-btn a{
+  text-decoration: none;
+  color: black;
+  padding: 10px 10px 0px;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+div.col-btn.active,
+div.col-btn:hover{
+  background: #5f5d9c;
+  transition: 0.3s all ease-in-out;
+  color: #fff;
+}
+.btn-box{
+  display: flex;
+}
+.fss{
+  background: red;
+  width: 30%;
+  line-height: 1.4;
+  height: 100%;
+  border-radius: 100px;
+  border: 1px solid #5f5d9c;
+  background:#5f5d9c ;
+}
+.fa-solid, .fas {
+  font-weight: 900;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.col-wrapper {
+  padding-top: 15%;
+  text-align: end; 
+}
+.col-wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  background: #611c1c;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.col-titles-btn{
-    margin-top: 105%;
+
+nav {
+  text-align: -webkit-right;
 }
-/* .btn-test{
-    width: 100%;
-    background-color: rgb(28, 36, 33);
-    height: 60px;
-    border-radius: 50%;
-} */
-.btn-test i{
-    padding: 9px 18px;
-    background-color: rgb(33, 34, 33);
-    width: 30%;
-    height: 100%;
-    border: 1px solid  rgb(33, 34, 33);
-    border-radius: 50% !important;
+nav a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s all ease-in-out;
 }
-.btn-test:hover.btn-test {
-    color: white;
-    display: block;
-    padding: 9px 18px;
-    background-color: rgb(33, 34, 33);
-    width: 100%;
-    height: 100%;
-    border: 1px solid  rgb(33, 34, 33);
-    border-radius: 50% !important;
+nav a svg {
+  width: 30px;
+  height: 30px;
 }
-/* btn-design */
-.btn-design{
-    margin-top: 80%;
-    width: 100%;
-    height: 200px;
-    position: relative;
-   
+nav a svg path,
+nav a svg circle {
+  transition: 0.3s all ease-in-out;
 }
-.btn-fa{
-    position: absolute;
-    right: 0px;
-    top: 47px;
-    width: 30%;
-    height: 40px;
-    background-color: #5F5D9C;
-    border: 1px solid #5F5D9C;
+nav a span {
+  position: absolute;
+  color: #fff;
+  transform: translateY(0px);
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: 0s;
 }
-.btn-fa i{
-    padding: 10px 10px;
+nav a span::before {
+  position: absolute;
+  content: '';
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.btn-i{
-    padding: 12px 10px;
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    color: aliceblue;
+
+nav a.home span {
+  background-color: var(--home);
 }
-.btn-fa:hover{
-    display:none;
+
+nav a.home span::before {
+  border-top-color: var(--home);
 }
-.fa-solid:hover.col-btns{
-    display: none;
+
+nav a.about span {
+  background-color: var(--about);
+}
+
+nav a.about span::before {
+  border-top-color: var(--about);
+}
+
+nav a.portfolio span {
+  background-color: var(--portfolio);
+}
+
+nav a.portfolio span::before {
+  border-top-color: var(--portfolio);
+}
+
+nav a.contact span {
+  background-color: var(--contact);
+}
+
+nav a.contact span::before {
+  border-top-color: var(--contact);
+}
+
+nav a.active,
+nav a:hover {
+  box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+nav a.home:hover {
+  background-color: var(--home);
+}
+
+nav a.about:hover {
+  background-color: var(--about);
+}
+
+nav a.portfolio:hover {
+  background-color: var(--portfolio);
+}
+
+nav a.contact.active,
+nav a.contact:hover {
+  background-color: var(--contact);
+}
+
+nav a.active span,
+nav a:hover span {
+  transform: translateY(-80px);
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+nav a.active svg path,
+nav a.active svg circle,
+nav a:hover svg path,
+nav a:hover svg circle {
+  fill: #fff;
 }
